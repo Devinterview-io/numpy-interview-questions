@@ -369,6 +369,7 @@ deep_2d = original_2d.copy(order='K')  # Deep copy with 'K'
 deep_2d[0, 0] = 100
 print(deep_2d)  # [[100, 2], [3, 4]]
 print(original_2d)  # [[1, 2], [3, 4]]
+```
 <br>
 
 ## 9. How do you perform _element-wise operations_ in _NumPy_?
