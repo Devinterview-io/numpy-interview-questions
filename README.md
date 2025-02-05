@@ -324,7 +324,7 @@ Each type of copy preserves ndarray data in a different way, impacting their lin
 
 ### Shallow Copy
 
-A shallow copy creates a new array object, but it does not duplicate the actual **data**. Instead, it points to the data of the original array. Modifying the shallow copy will affect the original array and vice versa.
+A shallow copy creates a new array object, but it does not duplicate the actual **data**. Instead, it points to the data of the original array. Modifying the shallow copy will not affect the original array, while any modification in the original array will affect the shallow copy.
 
 
 The shallow copy is a view of the original array. You can create it either by calling `.copy()` method on an array or using a slice operation.
